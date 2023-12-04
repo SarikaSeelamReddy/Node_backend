@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seelam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active" > <span style="text-shadow: 30px;font-weight: 600;">Seelam.com</span></a>
+        <a href="#home">Home</a>
+        
+        <a href="#education">Education</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#project">Projects</a>
+      
+        <a href="#blog">Blog</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!--card layout start-->
+    <div class="container">
+      <div class="row-grid">    
+        
+        <div class="grid-cards bk">
+            <img src="images/testimonial-2.jpg" alt="student Picture" width="440px" height="100%">
+          <h2>Reddy the Tech Savy &nbsp;</h2>
+          <div class="button-container">
+              <button class="red-button">Read More...</button>
+          </div>
+      </div>
+        <div class="card-grid bk">
+          <img src="images/work-3.jpg" alt="student Picture" width="440px">
+        </div>
+      </div>
+      <h2 id="education">Education</h2>
+      <div class="row">  
+          <div class="card-02">
+            <p>
+              Bachelors Degree in Computer Science
+            </p>
+            
+          </div>
+          <div class="card-02">
+           <p>
+           Masters Degree in Software Engineering.
+           </p>
+          </div>
+      </div>
+    <h2 id="about" >About</h2>
+    <div class="row">    
+      <div class="card-03">
+        <p>
+         I am a well skilled web developer.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+      </div>
+    </div>
+ 
+    
+      <h2 id="project">Projects</h2>
+      <div class="row">   
+        <div class="card-01">
+            <i class="fab fa-github"></i>
+            <p>Graphic Design</p>
+        </div>
+        <div class="card-01">
+            <i class="fas fa-server"></i>
+            <p>Server Maintenance</p>
+        </div>
+        <div class="card-01">
+            <i class="fas fa-bars"></i>
+            <p>Networking</p>
+        </div>
+      </div>
+
+      <h2 id="experience" >Experience</h2>
+      <div class="row">    
+        <div class="card-03">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                  provident vitae! Magni
+                  tempora perferendis eum non provident.
+          </p>
+        </div>
+      </div>
+      <!-- Add a new row using CSS Grid -->
+      <h2 id="blog">Blogs</h2>
+      <div class="row-grid">
+          <div class="card-grids">
+              <h3>Lorem Ipsum</h3>
+              <p class="blog-date">22nd May, 2010</p>
+              <p class="blog-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.       </p>
+          </div>
+          <div class="card-grids">
+              <h3>Computer Science</h3>
+              <p class="blog-date">22nd Sept, 2018</p>
+              <p class="blog-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p>
+              
+          </div>
+
+          
+      </div>
+
+    </div>
+    <footer>
+      <div class="social-icons">
+        <a href="your-facebook-url" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="your-twitter-url" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="your-linkedin-url" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="your-github-url" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+      <hr>
+      <div class="copyright">
+          <h2> &copy; Copyright Sarikareddy. All Rights Reserved
+
+            Designed by Sarikareddy</h2>
+      </div>
+  </footer>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("topnav");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+  </body>
+</html>
+      
