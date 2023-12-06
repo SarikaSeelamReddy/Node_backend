@@ -46,15 +46,15 @@ app.post('/api/users', (req, res) => {
 });
 
 // JSON file to store programmers data data
-const programmersDataFile = './data/patients.json';
+const programmersDataFile = './data/programmers.json';
 
 // API endpoints for programmers
-app.get('/api/patientdetails', (req, res) => {
+app.get('/api/programmersresource', (req, res) => {
   const programmers = require(programmersDataFile);
   res.json(programmers);
 });
 
-app.post('/api/patientdetails', (req, res) => {
+app.post('/api/programmersresource', (req, res) => {
   const newAssignment = req.body;
 
   const programmers = require(programmersDataFile);
@@ -71,15 +71,15 @@ app.post('/api/patientdetails', (req, res) => {
   });
 });
 
-// API endpoints for sections
-const departmentsDataFile = './data/sections.json';
+// API endpoints for departments
+const departmentsDataFile = './data/departments.json';
 
-app.get('/api/sections', (req, res) => {
+app.get('/api/departments', (req, res) => {
   const departments = require(departmentsDataFile);
   res.json(departments);
 });
 
-app.post('/api/sections', (req, res) => {
+app.post('/api/departments', (req, res) => {
   const newDepartment = req.body;
 
   const departments = require(departmentsDataFile);
@@ -88,7 +88,7 @@ app.post('/api/sections', (req, res) => {
 
   fs.writeFile(departmentsDataFile, JSON.stringify(departments, null, 2), (err) => {
     if (err) {
-      console.error('Error writing sections data file:', err);
+      console.error('Error writing departments data file:', err);
       return res.status(500).send('Server error');
     }
 
