@@ -46,7 +46,7 @@ app.post('/api/users', (req, res) => {
 });
 
 // JSON file to store programmers data data
-const programmersDataFile = './data/programmers.json';
+const programmersDataFile = './data/patients.json';
 
 // API endpoints for programmers
 app.get('/api/programmersresource', (req, res) => {
