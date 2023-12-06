@@ -1,1 +1,14 @@
-
+[
+    {
+      "id": 1,
+      "name": "Doctor Fredrick",
+      "email": "djohn@hospital.com",
+      "age": 25
+    },
+    {
+      "id": 2,
+      "name": "Smith Smith",
+      "email": "jane@hospital.com",
+      "age": 30
+    }
+  ]
